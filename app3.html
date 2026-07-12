@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F5</title>
+    <style>
+        #ul{
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            border-radius: 15px;
+            align-items: center;
+            gap:50px;
+            background: rgba(225,225,225,0.2);
+            backdrop-filter:blur(10px) ;
+            box-shadow: 0 0 15px black;
+        }
+        li{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+            border-radius: 12px;
+            color: black;
+            list-style: none;
+        }
+        span{
+           font-weight: bolder;
+           font-size: 50px;
+           width: 100px;
+           padding: 20px;
+           font-style: italic;
+           background: linear-gradient(to left,black 20%,red 40%);
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+        }
+        .si{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 20px;
+        }
+        .fim{
+           width: 200px;
+           
+           padding: 20px;
+           background: linear-gradient(45deg,black 40%,silver);
+           border-radius: 15px;
+           box-shadow: 0 0 15px whitesmoke;
+        }
+         h1{
+            background: linear-gradient(to left,silver,rgb(4, 157, 228)40px);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+         }
+         h1::first-letter{
+            font-style:italic;
+            font-size: 40px;
+         }
+         .ol{
+            width: 100px;
+            border: none;
+            border-radius: 15px;
+            height: 40px;
+            background:white ;
+            color: black;
+            font-style: italic;
+         }
+         .ol:hover{
+            background: linear-gradient(45deg,blue,aqua);
+         }
+         img{
+            width: 300px;
+            height: 200px;
+            border-radius: 15px;
+            object-fit: cover;
+            box-shadow: 0 0 12px white;
+            transition:  0.5s;
+         }
+         img:hover{
+             transform:scale(1.05);
+             filter: brightness(100%);
+            box-shadow: 0 0 12px rgb(0, 255, 76),
+            0 0 13px aqua;
+         }
+         .container{
+            margin-top: 90px;
+            margin-left: 70px;
+            display: grid;
+            grid-template-columns:repeat(3,1fr);
+            gap: 40px;
+         }
+        
+         nav{
+            position: sticky;
+            top: 12px;
+         }
+         .ri{
+width: 100px;
+            border: none;
+            border-radius: 15px;
+            height: 40px;
+            background:white ;
+            color: black;
+            transition:background 1s;
+            font-style: italic;
+         }
+         .wann{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+         }
+         
+         .ri:hover{
+           background: linear-gradient(to left,silver, grey);
+           color: white;
+         }
+         h2{
+            font-size: 90px;
+            font-style: italic;
+            background: linear-gradient(45deg,blue,aqua);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+         }
+         h3{
+            text-align: center;
+            font-size: 20px;
+            width: 100px;
+            height: 50px;
+            border-radius: 15px;
+            background: black;
+            color: white;
+           
+         }
+         h3:hover{
+            transform: scale(1.05);
+            transition: 0.3s;
+         }
+        
+         .fpm{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+         
+    </style>
+</head>
+<body>
+    <video  autoplay  muted  loop  id="ul">
+        <source  src="videos/race1.mp4">
+    </video>
+    <nav>
+        <ul>
+            <h1>F5 C</h1>
+            <li>About</li>
+            <li>Help</li>
+            <li>Contant</li>
+            <li>Secure</li>
+            <button class="ol">Login</button>
+            <button class="ol">Signup</button>
+        </ul>
+    </nav>
+    <div class="si">
+        <div class="fim">
+            <h1>Cars <span>Legends</span> continue with <a href="http:continue with google" style="color: rgb(182, 2, 122);">Google</a></h1>
+        </div>
+    </div>
+    <h2>Engine Time</h2>
+    <div class="container">
+        <img src="images/car2.jpg" alt="">
+        <img src="images/jim.jpeg" alt="">
+        <img src="images/car.jpeg" alt="">
+        <img src="images/cars.webp" alt="">
+        <img src="images/tim.jpg" alt="">
+        <img src="images/him.webp" alt="">
+        <img src="images/yil.jpg" alt="">
+        <img src="images/yil2.jpg" alt="">
+        <img src="images/yil3.jpg" alt="">
+    </div>
+    <div class="wann">
+        <div class="wa">
+            <h2>Wanna Get Amazing Cars ? Get Ready for a roll</h2>
+            <div class="fpm">
+          <a href="app2.html"><button class="ri">Get In</button></a>
+            <h3>Shop Now</h3>
+        </div>
+        </div>
+    </div>
+    
+</body>
+</html>

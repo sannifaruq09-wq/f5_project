@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #pil{
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+       
+        .me{
+            font-style: italic;
+            font-size: 20px;
+            background:linear-gradient(45deg,blue 30%,aqua 40%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        }
+        
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            width: 900px;
+            background: rgba(255, 255,255, 0.2);
+            backdrop-filter: blur(10px);
+            gap: 80px;
+            height: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 12px black;
+        }
+        li{
+            list-style: none;
+        list-style-type: none;
+        }
+        li:hover{
+color: red;
+        }
+        input{
+            margin-top: 10px;
+            margin-left:200px ;
+            width: 900px;
+            padding: 15px;
+            border: none;
+            border-radius: 15px;
+            background: black;
+            color:white;
+        }
+        img{
+            height: 200px;
+            background: white;
+            border-radius: 15px;
+            object-fit: cover;
+            box-shadow: 0 0 15px black;
+        }
+        .photo{
+            margin-top: 50px;
+            margin-left: 100px;
+            display: grid;
+            grid-template-columns: repeat(3,300px);
+            gap: 90px;
+
+        }
+        .go1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .ta{
+             font-style: italic;
+            font-size: 40px;
+            background:linear-gradient(45deg, red 20%, black 40%,blue 50%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+       img{
+   height: 200px;
+            background:linear-gradient(45deg,blue 20%,aqua 40%);
+            border-radius: 15px;
+            object-fit: cover;
+            box-shadow: 0 0 15px black;
+       }
+       img:hover{
+transition: .3s;
+transform: scale(1.1);
+       }
+       .container{
+        display: grid;
+        margin-top: 40px;
+        margin-left: 90px;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+       }
+       .hi{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: blue;
+        font-size: 100px;
+        font-style: italic;
+       }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop playsinline id="pil">
+        <source src="videos/yill4.mp4">
+    </video>
+
+    <nav>
+       
+        <ul>
+            <h1 class="me">Welcome to legend</h1>
+            <li>Cars</li>
+            <li>Bikes</li>
+            <li>Phones</li>
+           <li>Watch</li>
+           <li>Tv</li>
+           <li>Designs</li>
+        </ul>
+    </nav>
+    <h1 class="hi">FEW</h1>
+    <input type="search" placeholder="search Items">
+<div class="photo">
+       
+        <img src="images/bike.jpg" alt="Bikes">
+        <img src="images/fish.jpg" alt="">
+        <img src="images/fantasy.jpg" alt="Cars">
+</div>
+<div class="go1">
+<div class="go2">
+    <h1 class="ta">P.H.O.N.E</h1>
+</div>
+</div>
+<div class="container">
+    <img src="images/phone1.png" alt="">
+    <img src="images/phone2.png" alt="">
+    <img src="images/phone3.png" alt="">
+    <img src="images/phone4.png" alt="">
+    <img src="images/phone5.png" alt="">
+    <img src="images/phone6.png" alt="">
+    <img src="images/phone7.png" alt="">
+    <img src="images/phone8.png" alt="">
+     <img src="images/kim.png" alt="">
+</div>
+<div class="go1">
+<div class="go2">
+    <h1 class="ta">T.V</h1>
+</div>
+</div>
+    <div class="container">
+    <img src="images/tv.jpg" alt="">
+    <img src="images/phone2.png" alt="">
+    <img src="images/phone3.png" alt="">
+    <img src="images/phone4.png" alt="">
+    <img src="images/phone5.png" alt="">
+    <img src="images/phone6.png" alt="">
+    <img src="images/phone7.png" alt="">
+    <img src="images/phone8.png" alt="">
+     <img src="images/kim.png" alt="">
+</div>
+</body>
+</html>
