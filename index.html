@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+     body{
+      background: linear-gradient(45deg,grey 30%,silver 50%);
+     }
+     .container{
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns:repeat(2,300px);
+      
+    
+      gap: 15px;
+     }
+     .card{
+      display: flex;
+      height: 100px;
+      justify-content: center;
+      overflow: auto;
+      align-items: center;
+      color: white;
+      font-size: 15px;
+      background: linear-gradient(to left,black);
+      border-radius: 15px;
+      box-shadow: 0 0 15px white;
+      border: 2px solid black;
+     }
+     @media(max-width:600px){
+      .container{
+         display: grid;
+         grid-template-columns: repeat(2,300px);
+         gap: 2px;
+      }
+      .container div{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+      body{
+         background: black;
+      }
+      .card{
+         font-size: 15px;
+         height:100px ;
+         color: white;
+         overflow: auto;
+         font-style: italic;
+         background: rgba(255,255,255,0.2);
+         border-radius: 15px;
+         box-shadow:0 0 15px white;
+      }
+     }
+   </style>
+</head>
+<body>
+   <div class="container">
+      <div class="card">1</div>
+      <div class="card">2</div>
+      <div class="card">3</div>
+      <div class="card">4</div>
+      <div class="card"><h5>This is me Faruq, the frontend developer i am capable of making website ,designs,and so on,to me beign a frontend developer is a lot the worlds needs,because of that i began to pursye my dreams and improve study and worshipping my God who created me, so be kind ok,</h5></div>
+   </div>
+</body>
+</html>
