@@ -6,12 +6,43 @@
    <title>Document</title>
    <style>
       body{
-         background: linear-gradient(to left,black);
+         background:black;
+            overflow: hidden;
+      }
+      .bill{
          display: flex;
          justify-content: center;
          align-items: center;
-         height: 80vh;
-         margin-top: 80px;
+         height: 100vh;
+      }
+      .tol{
+         width: 70px;
+         height: 70px;
+         background: blue;
+         border-radius: 50%;
+         font-size: 20px;
+         box-shadow: 0 0 3px silver;
+      }
+      .tall{
+         width: 70px;
+         height: 60px;
+         font-size: 20px;
+         border-radius: 50%;
+         box-shadow:inset 0 0 3px silver;
+      }
+      .fim{
+         width: 70px;
+         height: 60px;
+         font-size: 20px;
+         border-radius: 50%;
+         box-shadow:inset 0 0 3px silver;
+      }
+      .ton{
+         width: 70px;
+         font-size: 20px;
+         height: 60px;
+border-radius: 50%;
+         box-shadow: inset 0 0 3px silver;
       }
       #calculator{
          text-align: end;
@@ -43,21 +74,49 @@ background: rgb(5, 243, 5);
 box-shadow: 0 0 5px silver;
          }
          .tall{
-            box-shadow: 0 0 8px silver;
+                width: 70px;
+         font-size: 20px;
+         height: 60px;
+border-radius: 50%;
+         box-shadow: inset 0 0 3px silver;
          }
+         body{
+         background: black;
+            
+      }
+      .bill{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+      }
          .tall:hover{
-box-shadow: 0 0 8px silver;
+       width: 70px;
+         font-size: 20px;
+         height: 60px;
+border-radius: 50%;
+         box-shadow: inset 0 0 3px silver;
+         }
+         .hi{
+            gap: 60px;
+            margin-left: 40px;
          }
          .ton{
-            box-shadow: 0 0 8px silver;
+             width: 70px;
+         font-size: 20px;
+         height: 60px;
+border-radius: 50%;
+         box-shadow: inset 0 0 3px silver;
          }
          .tall{
             background: linear-gradient(45deg,orange 20%,rgb(255, 102, 0) 20%);
+                   width: 70px;
+         font-size: 20px;
+         height: 60px;
+border-radius: 50%;
+         box-shadow: inset 0 0 3px silver;
          }
-         body{
-            background:black
-
-         }
+         
          .tall:active{
             transform: scale(1.05);
             box-shadow: 0 0 15px blue;
@@ -75,6 +134,7 @@ box-shadow: 0 0 8px silver;
    </style>
 </head>
 <body>
+   <div class="bill">
    <div class="calcula">
       <input type="text" id="calculator" placeholder="F5 Cal" /disabled>
       <div class="hi">
@@ -112,6 +172,7 @@ box-shadow: 0 0 8px silver;
          <button class="tol"  onclick="press('.')">.</button>
          <button class="tol"  onclick="press(',')">,</button>
       </div>
+   </div>
    </div>
 </body>
 <script>
