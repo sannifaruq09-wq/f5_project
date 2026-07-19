@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F speed</title>
+    <style>
+        body{
+            background: linear-gradient(to left,black);
+        }
+        .in{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:white;
+            gap: 5px;
+            font-style: italic;
+        }
+        .max{
+background: linear-gradient(to left,blue,aqua,rgb(0, 140, 255));
+   -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+font-size: 25px;
+border-radius: 15px;
+  
+        }
+        .max::first-letter{
+            font-size: 90px;
+            font-weight: 25px;
+            font-style: italic;
+        }
+        .lin{
+            width: 400px;
+            height: 40px;
+            border: none;
+            border-radius: 15px;
+            background: linear-gradient(white);
+        }
+        .me{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            position: sticky;
+            top: 5px;
+            width: 30%;
+            height: 40px;
+            gap: 55px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 15px;
+            box-shadow: 0 0 8px white;
+            backdrop-filter: blur(12px);
+        }
+        li{
+            list-style: none;
+            color: white;
+        }
+        .fil{
+            width: 100px;
+            height: 30px;
+            background: white;
+            color: black;
+            border: none;
+            border-radius: 7px;
+            font-style: italic;
+            transition: background 1s;
+        }
+       .fil:hover{
+        background: linear-gradient(to left,rgb(4, 235, 23),rgb(4, 240, 248));
+        color: black;
+       }
+       .max{
+ background: linear-gradient(to left,blue,aqua,rgb(0, 140, 255));
+   -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+font-size: 25px;
+border-radius: 15px;
+       }
+       .max::first-letter{
+        font-size: 30px;
+            font-weight: 25px;
+            font-style: italic;
+       }
+       .container{
+        display: grid;
+        margin-top: 20px;
+        margin-left: 40px;
+        grid-template-columns: repeat(500,1fr);
+        gap: 12px;
+       
+       }
+       img:hover{
+        width: 500px;
+        box-shadow: 0 0 12px white;
+       }
+       img{
+        border-radius: 15px;
+        object-fit: cover;
+        width: 200px;
+        height: 200px;
+    transition: width 0.3s;
+       }
+       .jih{
+        border: none;
+        width: 250px;
+        height: 40px;
+        border-radius: 15px;
+        background: white;
+        color: black;
+       }
+       
+       fieldset{
+        border-radius: 12px;
+        margin-top: 10px;
+       }
+       .film{
+       
+           width: 100px;
+            height: 30px;
+            background: white;
+            color: black;
+            border: none;
+            border-radius: 7px;
+            font-style: italic;
+      }
+      .fill{
+        position: fixed;
+        width: 100%;
+        left: 472px;
+        top: 50px;
+      }
+      .fi{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+      }
+        .ji{
+        text-align: center;
+        color: white;
+       }
+        
+       a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       #loginbox{
+        position: absolute;
+        top: 50px;
+        background: black;
+        left: 50px;
+        transform: translateX(-50%,-50%);
+        width: 300px;
+        padding: 30px;
+        box-shadow: 0 0 9px grey;
+        border-radius: 15px;
+       }
+       h6{
+        color: white;
+        font-size: 30px;
+       }
+        #signupbox{
+        position: absolute;
+        top: 50px;
+        background: black;
+        left: 50px;
+        transform: translateX(-50%,-50%);
+        width: 300px;
+        padding: 30px;
+        box-shadow: 0 0 9px grey;
+        border-radius: 15px;
+       }
+       @media(max-width:782px){
+      ul{
+        gap: 11px;
+        width: 90%;
+      }
+      .container{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 100px 100px;
+        gap: 8px;
+        margin-left: 12px;
+       }
+       .fill{
+        position: fixed;
+        width: 100%;
+        left:-36px ;
+        top: 50px;
+       }
+       img{
+        border-radius: 15px;
+        width: 250px;
+        object-fit: cover;
+        height: 100px;
+       }
+       img:hover{
+        z-index: 1;
+        width: 250px;
+        box-shadow: 0 0 11px rgb(3, 243, 3);
+       }
+       h6{
+        color: white;
+        font-size: 20px;
+       }
+       }
+      
+    </style>
+</head>
+<body>
+     <nav>
+    <ul>
+        <h1 class="in">F<div><span ><h2 class="max">Xpeed</h2></span></div></h1>
+        <button class="fil" onclick="loginbtn()">Login</button>
+        <button class="fil" onclick="signupbtn()">Signup</button>
+        <br><br>
+    </ul>
+ </nav>
+ 
+    <h1 class="in">F<div><span><h2 class="max">Xpeed</h2></span></div></h1>
+ <div class="me"><input class="lin" type="search" placeholder="search"></div>
+<div class="container">
+        <img src="images/car.jpeg" alt="">
+        <img src="images/car2.jpg" alt="">
+        <img src="images/him.webp" alt="">
+        <img src="images/cars.webp" alt="">
+    
+</div>
+<div class="fill">
+    <div id="loginbox" style="display: none;">
+    <h2 class="ji">Login</h2>
+    <fieldset>
+        <input class="jih" type="email" placeholder="Email">
+        </fieldset>
+         <fieldset>
+        <input class="jih" type="password" placeholder="Password">
+    </fieldset>
+    <br>
+    <a href="#">continue with goggle</a>
+    <br><br>
+    <div class="fi">
+    <button class="film">check</button>
+    </div>
+    </div>
+</div>
+<div class="fill">
+    <div id="signupbox"  style="display: none;">
+    <h2 class="ji">Create account</h2>
+    <fieldset>
+        <label style="color: white;">Email</label>
+        <input class="jih" type="email" placeholder="Email">
+        </fieldset>
+         <fieldset>
+            <label style="color: white;">Password</label>
+        <input class="jih" type="password" placeholder="Password">
+    </fieldset>
+       <fieldset>
+        <label style="color: white;">Number</label>
+        <input class="jih" type="number" placeholder="Number">
+    </fieldset>
+       <fieldset>
+        <label style="color: white;" for="dob">Date of birth</label>
+        <input class="jih" type="date" id="dob" name="dob">
+    </fieldset>
+    <br>
+    <a href="#">already have an account</a>
+    <br><br>
+    <div class="fi">
+    <button class="film">create</button>
+    </div>
+    </div>
+</div>
+<h3 style="color: white;font-style: italic;">Please fill information before Entry</h3>
+<br>
+<input type="checkbox" style="width: 20px;height: 20px; border-radius: 50%;"><h6>do you agree to all informations</h6>
+<input type="checkbox" style="width: 20px;height: 20px; border-radius: 50%;"><h6>Limited features that suit you will be given</h6>
+<input type="checkbox" style="width: 20px;height: 20px; border-radius: 50%;"><h6>No illegal signs</h6>
+<input type="checkbox" style="width: 20px;height: 20px; border-radius: 50%;"><h6>Report when necessary</h6>
+<div class="red"><a href="#" style="color: white;"><button style="width: 100px;height: 40px;background: white;color: black;border-radius: 15px;">Read more</button></a></div>
+<h1 style="color: rgb(4, 247, 4);font-style: italic;display: flex;align-items: center;justify-content: center;">Thank you</h1>
+<script>
+    
+    let loginbox =document.getElementById("loginbox")
+    function loginbtn(){
+    loginbox.style.display="block";
+    signupbox.style.display="none";
+    }
+    let signupbox=document.getElementById("signupbox")
+    function signupbtn(){
+        signupbox.style.display="block";
+        loginbox.style.display="none";
+    }
+</script>
+</body>
+</html>
