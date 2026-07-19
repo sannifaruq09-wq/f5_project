@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      body{
+         background: linear-gradient(to left,silver,grey);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 80vh;
+         margin-top: 80px;
+      }
+      #calculator{
+         text-align: end;
+         width: 100%;
+         height: 60px;
+         color: white;
+         background:rgb(51, 51, 51);
+         border: none;
+         border-radius: 15px;
+      }
+      .hi{
+         gap: 30px;
+         margin-top: 15px;
+      }
+      button{
+         width: 80px;
+         height: 80px;
+         border: none;
+         border-radius: 15px;
+         background: black;
+         color: white;
+         box-shadow: 5px 5px 0 silver;
+      }
+      
+      @media(max-width:782px){
+         .tol{
+background: rgb(5, 243, 5);
+box-shadow: 5px 5px 0 silver;
+         }
+         .tall{
+            background: linear-gradient(45deg,orange 20%,rgb(255, 102, 0) 20%);
+         }
+         body{
+            background:black
+
+         }
+         .tall:active{
+            transform: scale(1.05);
+            box-shadow: 0 0 15px blue;
+         }
+         #calculator{
+            box-shadow: 0 0 12px silver;
+         }
+         
+         
+      }
+   </style>
+</head>
+<body>
+   <div class="calcula">
+      <div class="hi">
+      <button class="fim" onclick="Mr()">R</button>
+      <button class="fim" onclick="Mc()">D</button>
+      <button class="fim" onclick="Ms()">S</button>
+      
+      </div>
+      <input type="text" id="calculator" placeholder="F5 Cal" /disabled>
+      <div class="hi">
+         <button class="tall" onclick="calculate('=')">=</button>
+         <button class="tall" onclick="backspace()">B</button>
+         <button class="tall" onclick="clearDisplay()">C</button>
+         <button class="fim" onclick="press('(')">(</button>
+      <button class="fim" onclick="press(')')">)</button>
+      </div>
+      <div class="hi">
+         <button class="ton" onclick="press('1')">1</button>
+         <button class="ton" onclick="press('2')">2</button>
+         <button class="ton" onclick="press('3')">3</button>
+         <button class="tol"   onclick="press('+')">+</button>
+         
+      </div>
+      <div class="hi">
+         <button class="ton" onclick="press('4')">4</button>
+         <button  class="ton" onclick="press('5')">5</button>
+         <button class="ton" onclick="press('6')">6</button>
+         <button class="tol"  onclick="press('-')">-</button>
+      </div>
+      <div class="hi">
+         <button  class="ton" onclick="press('7')">7</button>
+         <button  class="ton" onclick="press('8')">8</button>
+         <button class="ton" onclick="press('9')">9</button>
+         <button class="tol"  onclick="press('/')">/</button>
+      </div>
+      <div class="hi">
+         <button class="ton" onclick="press('0')">0</button>
+         <button class="tol" onclick="press('*')">*</button>
+         <button class="tol"  onclick="press('.')">.</button>
+         <button class="tol"  onclick="press(',')">,</button>
+      </div>
+   </div>
+</body>
+<script>
+let display=document.getElementById("calculator");
+function press(value){
+    display.value += value
+}
+function calculate(){
+   try{display.value = eval(display.value)}
+   catch(Error){
+      display.value="Error";
+   }
+}
+function backspace(){
+   display.value = display.value.slice(0,-1)
+}
+function clearDisplay(){
+   display.value="";
+}
+let memory=0
+function Mr(){
+memory=display.value
+}
+function Mc(){
+memory=0
+}
+function Ms(){
+   display.value=memory
+}
+</script>
+</html>
